@@ -24,7 +24,7 @@ public class ParkingSpot {
     private ParkingSpotStatus status;
     @Enumerated(value = EnumType.STRING)
     private ParkingSpotType type;
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 }

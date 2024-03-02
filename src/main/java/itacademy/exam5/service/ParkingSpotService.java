@@ -12,4 +12,5 @@ public interface ParkingSpotService {
     void delete(Long id);
     ParkingSpotDto book(ParkingSpotDto model);
     ParkingSpotDto release(ParkingSpotDto model);
+    List<ParkingSpotDto> getAllFilterByType(String type);
 }
